@@ -1,0 +1,90 @@
+﻿<%@ Master Language="VB" CodeFile="mstuser.master.vb" Inherits="mstuser" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 775px;
+        }
+        .style2
+        {
+            height: 99px;
+            text-align: center;
+        }
+        .style3
+        {
+            height: 67px;
+            text-align: center;
+        }
+        .style4
+        {
+            height: 45px;
+        }
+        .style5
+        {
+            height: 488px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       
+        <table border="1" class="style1">
+           
+            <tr>
+                <td bgcolor="White" class="style4" align="left" valign="middle">
+                    &nbsp;&nbsp;&nbsp; 
+                    <asp:Image ID="Image1" runat="server" Height="40px" ImageAlign="AbsBottom" 
+                        ImageUrl="~/image/easybuy logo.png" Width="40px" />
+                    <asp:Label ID="Label3" runat="server" Font-Bold="True" 
+                        Font-Size="60px" ForeColor="Black" 
+                        Text="EasyBuy" style="font-size: xx-large"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/home.aspx" 
+                        ForeColor="Black">Home</asp:HyperLink>
+&nbsp;&nbsp; |&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/category.aspx" 
+                        ForeColor="Black">Category</asp:HyperLink>
+                    &nbsp; |&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/delivery.aspx" 
+                        ForeColor="Black">Orders</asp:HyperLink>
+&nbsp;&nbsp; |&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/account.aspx" 
+                        ForeColor="Black">Account</asp:HyperLink>
+&nbsp;&nbsp; |&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/cartview.aspx" 
+                        ForeColor="Black">Cart View</asp:HyperLink>
+&nbsp;&nbsp; |&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/aboutus.aspx" 
+                        ForeColor="Black">About us</asp:HyperLink>
+                &nbsp; |&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/login.aspx" 
+                        ForeColor="Black">Log out</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="White" class="style5" valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="White" class="style3">
+                    <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="X-Large" 
+                        ForeColor="Black" Text="Easybuy.com"></asp:Label>
+                </td>
+            </tr>
+        </table>
+       
+    </div>
+    </form>
+</body>
+</html>
